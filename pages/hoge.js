@@ -1,4 +1,4 @@
-import Fetch from 'isomorphic-unfetch';
+import styles from '../styles/Hoge.module.css'
 
 function Hoge({ stars }) {
     const foo = 'bar'
@@ -11,14 +11,14 @@ function Hoge({ stars }) {
     return (
         <div>
             <h2>Hello Hoge</h2>
-            <p>foo: {foo}</p>
+            <p className={styles.hoge}>foo: {foo}</p>
             <div>
                 <p>配列をループで表示させてるよ</p>
                 <ul>
                     {numberList}
                 </ul>
             </div>
-            <p>APIから取得したデータ: {stars}</p>
+            <p>Next.js GitHub StarsCount: {stars}</p>
         </div>
     )
 }
